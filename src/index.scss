@@ -102,3 +102,125 @@ header {
   position: absolute;
   cursor: pointer;
 }
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+ }
+
+.drawer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 420px;
+  height: 100%;
+  right: 0;
+  background: #ffffff;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: transform 0.3s ease-out;
+  .items {
+    overflow: auto;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+}
+
+.cartItem {
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0 20px;
+
+  .cartItemImg {
+    background-position: center;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  b {
+    font-size: 16px;
+  }
+
+  button {
+    border: none;
+  }
+}
+
+.removeBtn {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.cartTotalBlock {
+  li {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+
+  }
+
+  .greenButton {
+    position: relative;
+
+    &:hover {
+      img {
+        transform: translateX(5px);
+      }
+    }
+
+    img {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      transition: transform 0.1s ease-in-out;
+
+    }
+  }
+
+  .greenButton {
+    width: 100%;
+    border: none;
+    height: 55px;
+    background: #9dd558;
+    border-radius: 18px;
+    bottom: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+
+    &:hover {
+      background: lighten(#9dd558, 10%);
+
+    }
+  }
+
+  div {
+    flex: 1;
+    height: 1px;
+    border-bottom: 1px dashed #dfdfdf;
+    position: relative;
+    top: -4px;
+    margin: 0 7px;
+  }
+}
