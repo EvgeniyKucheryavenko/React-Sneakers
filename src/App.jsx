@@ -6,10 +6,16 @@ import sneakers2 from './assets/sneakers/2.jpg';
 import sneakers3 from './assets/sneakers/3.jpg';
 import sneakers4 from './assets/sneakers/4.jpg';
 import add from './assets/add.svg';
+import search from './assets/sneakers/search.svg';
+import heartUnliked from './assets/heartunliked.svg'
+import heartLiked from './assets/heartliked.svg'
 
 const App = () => {
     return (
         <div className="wrapper clear">
+
+
+
             <header className="d-flex justify-between align-center p-40">
                 <div className="headerLeft d-flex align-center">
                     <img src={Logo} alt="logo image" width={40} height={40}/>
@@ -44,10 +50,19 @@ const App = () => {
             </header>
 
             <div className="content p-40">
-                <h1 className="mb-40">Все кроссовки</h1>
-                <div className="sneakers d-flex">
+                <div className="d-flex justify-between mb-40 align-center">
+                    <h1>Все кроссовки</h1>
+                    <div className="search-block d-flex">
+                        <img src={search} alt="Search"/>
+                        <input type="text" placeholder="Поиск"/>
+                    </div>
+                </div>
 
+                <div className="sneakers d-flex">
                     <div className="card">
+                        <div className="favorite">
+                            <img src={heartUnliked} alt="heart"/>
+                        </div>
                         <img
                             height={112}
                             width={133}
@@ -112,9 +127,7 @@ const App = () => {
                             </button>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     );
