@@ -1,9 +1,19 @@
-body {
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+
   font-family: -apple-system, sans-serif;
   background-color: #e7f6ff;
+}
+
+h1,h2,h3, {
+  margin: 0;
+  padding: 0;
 }
 .wrapper {
   background: #fff;
@@ -11,5 +21,18 @@ body {
   border-radius: 20px;
   max-width: 1080px;
   margin: 50px auto;
+}
 
+
+header {
+  border-bottom: 1px solid #eaeaea;
+  .headerLeft{
+
+  }
+}
+
+.content {
+  h1 {
+    margin: 0;
+  }
 }
