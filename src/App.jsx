@@ -109,6 +109,7 @@ const App = () => {
             </header>
 
             <div className="content p-40">
+
                 <div className="d-flex justify-between mb-40 align-center">
                     <h1>Все кроссовки</h1>
                     <div className="search-block d-flex">
@@ -118,6 +119,7 @@ const App = () => {
                 </div>
 
                 <div className="sneakers d-flex">
+
                     <div className="card">
                         <div className="favorite">
                             <img src={heartUnliked} alt="heart"/>
@@ -169,7 +171,6 @@ const App = () => {
                             </button>
                         </div>
                     </div>
-
                     <div className="card">
                         <img
                             height={112}
