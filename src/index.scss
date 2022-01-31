@@ -125,6 +125,7 @@ header {
   padding: 30px;
   transition: transform 0.3s ease-out;
   .items {
+    flex: 1;
     overflow: auto;
   }
 
