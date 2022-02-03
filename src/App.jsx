@@ -5,9 +5,9 @@ import sneakers2 from './assets/sneakers/2.jpg';
 import sneakers3 from './assets/sneakers/3.jpg';
 import sneakers4 from './assets/sneakers/4.jpg';
 import search from './assets/sneakers/search.svg';
-import Card from "./components/Card";
 import Header from "./components/Header";
 import Drawer from "./components/Drawer";
+import Card from "./components/card";
 
 
 const arr = [
@@ -63,7 +63,11 @@ const App = () => {
                 <div className="sneakers d-flex">
                     {arr.map(value => {
                         return (
-                            <Card name={value.name} price={value.price} imgUrl={value.imgUrl}/>
+                            <Card name={value.name}
+                                   price={value.price}
+                                   imgUrl={value.imgUrl}
+                                   onCLickAFavorite={()=>console.log(value)}
+                                   onCLickPlus={()=>console.log(value)}/>
                         )
                     })}
                 </div>

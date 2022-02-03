@@ -1,10 +1,9 @@
 import React from 'react';
-import heartUnliked from "../assets/heartunliked.svg";
-import add from "../assets/add.svg";
+import heartUnliked from "../../assets/heartunliked.svg";
+import add from "../../assets/add.svg";
+
 
 const Card = (props) => {
-
-
     return (
         <div>
             <div className="card">
@@ -21,7 +20,7 @@ const Card = (props) => {
                         <span className="mt-10">Цена: </span>
                         <b>{props.price}руб.</b>
                     </div>
-                    <button className="button">
+                    <button className="button" onClick={props.onClick}>
                         <img src={add} alt="addToCart" width={11} height={11}/>
                     </button>
                 </div>
